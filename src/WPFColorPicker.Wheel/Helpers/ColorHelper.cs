@@ -34,7 +34,7 @@ namespace WPFColorPicker.Wheel.Helpers
         }
 
         /// <summary>
-        /// This method is responsible for get the angle of complex color wheel object.
+        /// This method is responsible for return the angle of complex color wheel object.
         /// </summary>
         /// <param name="complex">The Complex object data of color wheel.</param>
         /// <returns>The angle of complex color wheel object.</returns>
@@ -59,7 +59,7 @@ namespace WPFColorPicker.Wheel.Helpers
         }
 
         /// <summary>
-        /// This method is responsible for get the argument of complex color wheel object.
+        /// This method is responsible for return the argument of complex color wheel object.
         /// </summary>
         /// <param name="complex">The Complex object data of color wheel.</param>
         /// <returns>The argument of complex color wheel object.</returns>
@@ -92,54 +92,54 @@ namespace WPFColorPicker.Wheel.Helpers
                 var r = length;
                 var g = length;
                 var b = length;
-                var v = (length <= 0.5) ? (length * (1.0 + saturation)) : (length + saturation - length * saturation);
+                var value = (length <= 0.5) ? (length * (1.0 + saturation)) : (length + saturation - length * saturation);
 
-                if (v > 0)
+                if (value > 0)
                 {
-                    var m = length + length - v;
-                    var sv = (v - m) / v;
+                    var m = length + length - value;
+                    var sv = (value - m) / value;
 
                     height *= 6.0;
 
                     var sextant = (int) height;
                     var fract = height - sextant;
-                    var vsf = v * sv * fract;
+                    var vsf = value * sv * fract;
                     var mid1 = m + vsf;
-                    var mid2 = v - vsf;
+                    var mid2 = value - vsf;
 
                     if (sextant == 0)
                     {
-                        r = v;
+                        r = value;
                         g = mid1;
                         b = m;
                     }
                     else if (sextant == 1)
                     {
                         r = mid2;
-                        g = v;
+                        g = value;
                         b = m;
                     }
                     else if (sextant == 2)
                     {
                         r = m;
-                        g = v;
+                        g = value;
                         b = mid1;
                     }
                     else if (sextant == 3)
                     {
                         r = m;
                         g = mid2;
-                        b = v;
+                        b = value;
                     }
                     else if (sextant == 4)
                     {
                         r = mid1;
                         g = m;
-                        b = v;
+                        b = value;
                     }
                     else if (sextant == 5)
                     {
-                        r = v;
+                        r = value;
                         g = m;
                         b = mid2;
                     }

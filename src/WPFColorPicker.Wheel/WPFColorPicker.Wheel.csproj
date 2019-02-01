@@ -47,6 +47,9 @@
   <ItemGroup>
     <Compile Include="Color\ColorWheel.cs" />
     <Compile Include="Color\ComputationRequest.cs" />
+    <Compile Include="ExtensionMethods\ByteExtensionMethods.cs" />
+    <Compile Include="ExtensionMethods\ColorExtensionMethods.cs" />
+    <Compile Include="ExtensionMethods\DoubleExtensionMethods.cs" />
     <Compile Include="Helpers\ColorHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
