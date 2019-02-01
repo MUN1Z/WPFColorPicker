@@ -3,9 +3,63 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Wheel", "src\WPFColorPicker.Wheel\WPFColorPicker.Wheel.csproj", "{D94C3B2D-8A98-4919-99F1-82B413B75450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Wheel.Controls", "src\WPFColorPicker.Wheel.Controls\WPFColorPicker.Wheel.Controls.csproj", "{3D96E81A-3281-431F-86D4-8F8D27CB7504}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E524B99C-584B-4103-86F0-4FEDD2C16791}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{904ED363-34C8-4448-8B94-147195C082F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Demo", "src\WPFColorPicker.Demo\WPFColorPicker.Demo.csproj", "{BC9A7828-B81B-4079-AE79-591E4263A402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Wheel.Controls.Tests", "tests\WPFColorPicker.Wheel.Controls.Tests\WPFColorPicker.Wheel.Controls.Tests.csproj", "{46B3CBBF-4468-499C-9594-230A6C10FC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Wheel.Tests", "tests\WPFColorPicker.Wheel.Tests\WPFColorPicker.Wheel.Tests.csproj", "{3ECF714C-7855-4F12-A631-1D2ED535C1D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFColorPicker.Demo.Tests", "tests\WPFColorPicker.Demo.Tests\WPFColorPicker.Demo.Tests.csproj", "{F14A66DC-AE8C-4113-B056-8C9218A2B7EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D94C3B2D-8A98-4919-99F1-82B413B75450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94C3B2D-8A98-4919-99F1-82B413B75450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94C3B2D-8A98-4919-99F1-82B413B75450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94C3B2D-8A98-4919-99F1-82B413B75450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D96E81A-3281-431F-86D4-8F8D27CB7504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D96E81A-3281-431F-86D4-8F8D27CB7504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D96E81A-3281-431F-86D4-8F8D27CB7504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D96E81A-3281-431F-86D4-8F8D27CB7504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9A7828-B81B-4079-AE79-591E4263A402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9A7828-B81B-4079-AE79-591E4263A402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9A7828-B81B-4079-AE79-591E4263A402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9A7828-B81B-4079-AE79-591E4263A402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B3CBBF-4468-499C-9594-230A6C10FC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B3CBBF-4468-499C-9594-230A6C10FC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B3CBBF-4468-499C-9594-230A6C10FC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B3CBBF-4468-499C-9594-230A6C10FC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECF714C-7855-4F12-A631-1D2ED535C1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECF714C-7855-4F12-A631-1D2ED535C1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECF714C-7855-4F12-A631-1D2ED535C1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECF714C-7855-4F12-A631-1D2ED535C1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14A66DC-AE8C-4113-B056-8C9218A2B7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14A66DC-AE8C-4113-B056-8C9218A2B7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14A66DC-AE8C-4113-B056-8C9218A2B7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14A66DC-AE8C-4113-B056-8C9218A2B7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D94C3B2D-8A98-4919-99F1-82B413B75450} = {E524B99C-584B-4103-86F0-4FEDD2C16791}
+		{3D96E81A-3281-431F-86D4-8F8D27CB7504} = {E524B99C-584B-4103-86F0-4FEDD2C16791}
+		{BC9A7828-B81B-4079-AE79-591E4263A402} = {E524B99C-584B-4103-86F0-4FEDD2C16791}
+		{46B3CBBF-4468-499C-9594-230A6C10FC06} = {904ED363-34C8-4448-8B94-147195C082F7}
+		{3ECF714C-7855-4F12-A631-1D2ED535C1D8} = {904ED363-34C8-4448-8B94-147195C082F7}
+		{F14A66DC-AE8C-4113-B056-8C9218A2B7EF} = {904ED363-34C8-4448-8B94-147195C082F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5484DF9A-1487-45D6-A680-50F7A773CED2}
